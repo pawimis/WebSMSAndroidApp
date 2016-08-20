@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="1dp"
+                    android:background="#10253F"
+                    android:gravity="top">
+        <ImageView
+            android:id="@+id/loginactivity_image"
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="invisible" />
+        <EditText
+            android:id="@+id/login_activity_text_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginactivity_image"
+            android:hint="@string/login_activity_text_login"
+            android:inputType="textNoSuggestions"
+            android:textColor="#FFFFFF"
+
+            android:textColorHint="#FFFFFF"/>
+        <EditText
+            android:id="@+id/login_activity_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_activity_text_login"
+            android:hint="@string/login_activity_text_password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
+        <Button
+            android:id="@+id/login_activity_button_login"
+            android:layout_below="@+id/login_activity_text_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:text="@string/login_activity_button_login" />
+        <Button
+            android:id="@+id/loginactivity_button_createNew"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_activity_button_login"
+            android:background="@drawable/button_selector"
+            android:text="@string/login_activity_button_CreateNew"/>
+    </RelativeLayout>
+</ScrollView>

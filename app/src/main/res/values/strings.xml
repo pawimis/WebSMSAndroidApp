@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SMS</string>
+    <string name="login_activity_text_login">Login</string>
+    <string name="login_activity_text_password">Hasło</string>
+    <string name="login_activity_button_login">Zaloguj się</string>
+    <string name="login_activity_button_CreateNew">Zarejestruj się</string>
+    <string name="activity_registration_text_login">Login</string>
+    <string name="activity_registration_text_password">Hasło</string>
+    <string name="activity_registration_text_repassword">Powtórz Hasło</string>
+    <string name="activity_registration_text_pnumber">Numer telefonu</string>
+    <string name="activity_registration_text_email">Adres email</string>
+    <string name="activity_registration_button_login">Zatejestruj się</string>
+    <string name="main_activity_button_logout">Wyloguj się</string>
+</resources>

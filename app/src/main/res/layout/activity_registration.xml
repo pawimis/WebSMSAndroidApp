@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#10253F"
+            android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="1dp"
+                    android:gravity="top">
+
+        <ImageView
+            android:id="@+id/activity_registration_image"
+            android:src="@drawable/image_on"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="invisible" />
+        <EditText
+            android:id="@+id/activity_registration_edittext_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_registration_image"
+            android:hint="@string/activity_registration_text_login"
+            android:inputType="textNoSuggestions"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
+        <EditText
+            android:id="@+id/activity_registration_edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_registration_edittext_login"
+            android:hint="@string/activity_registration_text_password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/activity_registration_edittext_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_registration_edittext_password"
+            android:hint="@string/activity_registration_text_repassword"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
+        <EditText
+            android:id="@+id/activity_registration_edittext_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_registration_edittext_repassword"
+            android:hint="@string/activity_registration_text_pnumber"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
+        <EditText
+            android:id="@+id/activity_registration_edittext_email"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/activity_registration_edittext_phonenumber"
+            android:hint="@string/activity_registration_text_email"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/activity_registration_button_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_registration_edittext_email"
+            android:background="@drawable/button_selector"
+            android:text="@string/activity_registration_button_login" />
+
+    </RelativeLayout>
+</ScrollView>
